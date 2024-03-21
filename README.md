@@ -5,7 +5,13 @@ When a video in a playlist on YouTube is deleted or set to private, all informat
 <img src="demo/example.png" width="600">
 
 ### The API Tool
-This is a tool I developed to recover videos in these scenarios. Using YouTube's API, it takes a snapshot of all the playlists on your YouTube account and saves this data locally. It will record each video's title, uploader, video status, playlist, and description. It will then compare the differences between a previous snapshot and find and indicate any lost videos. All information is recorded into different CSV files, which can be revisited anytime for further information. 
+This is a tool I developed to recover videos under these scenarios. Using YouTube's API, a snapshot of all your playlists' details are taken from your YouTube account. Then, a comparison is made with a previous snapshot to:
+- find videos that were not previously unlisted/privated/deleted
+- recover untracked privated videos that have been set to public again
+- ignore videos that were manually removed by the user and update the previous snapshot with any new changes
+
+It supports tracking across multiple accounts and additional accounts can be added at any time.
+
+All information is stored locally and can always be revisited for further information. 
 
 <img src="demo/demo.gif" width="600">
-
